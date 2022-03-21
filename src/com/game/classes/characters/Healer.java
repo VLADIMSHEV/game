@@ -1,0 +1,17 @@
+package com.game.classes.characters;
+
+import com.game.classes.AttackType;
+import com.game.classes.CharacterClass;
+
+public class Healer extends CharacterClass {
+    public Healer(String name) {
+        this.setLevel(1);
+        this.setMaxHealthPoints(60);
+        this.setMaxManaPoints(150);
+        this.setHealthPoints(60);
+        this.setManaPoints(150);
+        this.setName(name);
+        this.setAttackType(AttackType.MAGICAL_RANGED);
+        this.setAttackAmount(2);
+    }
+}
